@@ -34,9 +34,11 @@ VITE_OPENAI_API_KEY=tu_clave_de_openai
 
 🛠️ Scripts disponibles
 
+```
 npm install      # Instala dependencias
 npm run dev      # Inicia entorno local (localhost:5173)
 npm run build    # Genera versión optimizada
+```
 
 📩 Contacto
 
