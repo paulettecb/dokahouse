@@ -25,8 +25,9 @@ src/
 
 Crea un archivo `.env` con el siguiente contenido:
 
-```bash
+```
 VITE_OPENAI_API_KEY=tu_clave_de_openai
+```
 
 ⚠️ Nunca subas .env al repositorio (está ignorado en .gitignore)
 
