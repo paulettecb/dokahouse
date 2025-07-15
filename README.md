@@ -11,13 +11,15 @@ Landing page interactiva para **Doka House**, una marca inmobiliaria que integra
 
 ## 🧩 Estructura del proyecto
 
+```
 src/
 ├── App.jsx
 ├── main.jsx
 ├── components/
 │   └── ChatbotWidget.jsx
 └── views/
-└── Home.jsx
+    └── Home.jsx
+```
 
 ## 🔐 Variables de entorno
 
