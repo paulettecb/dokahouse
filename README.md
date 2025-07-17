@@ -16,7 +16,10 @@ src/
 ├── App.jsx
 ├── main.jsx
 ├── components/
-│   └── ChatbotWidget.jsx
+│   ├── ChatbotWidget.jsx
+│   └── PropertyList.jsx
+├── services/
+│   └── easyBrokerApi.js
 └── views/
     └── Home.jsx
 ```
@@ -27,6 +30,7 @@ Crea un archivo `.env` con el siguiente contenido:
 
 ```
 VITE_OPENAI_API_KEY=tu_clave_de_openai
+VITE_EASYBROKER_TOKEN=tu_token_de_easybroker
 ```
 
 ⚠️ Nunca subas .env al repositorio (está ignorado en .gitignore)
