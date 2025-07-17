@@ -44,6 +44,13 @@ npm run dev      # Inicia entorno local (localhost:5173)
 npm run build    # Genera versión optimizada
 ```
 
+## 🌐 Despliegue
+
+El repositorio cuenta con un flujo de GitHub Actions que compila la aplicación y
+la publica en GitHub Pages cada vez que se actualiza `main`. Revisa la propiedad
+`base` en `vite.config.js` para que coincida con el nombre de tu repositorio
+(`base: '/dokahouse/'`).
+
 📩 Contacto
 
 Paulette Barrales
