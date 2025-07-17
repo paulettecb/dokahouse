@@ -3,6 +3,8 @@ import Home from './views/Home'
 import Hero from './views/Hero'
 import Features from './views/Features'
 import ChatbotWidget from './components/ChatbotWidget'
+import Testimonials from './components/Testimonial'
+
 import './styles/theme.css'
 
 function App() {
@@ -36,6 +38,7 @@ function App() {
       <Hero />
       <Features />
       <ChatbotWidget />
+      <Testimonials />
     </>
   )
 }
