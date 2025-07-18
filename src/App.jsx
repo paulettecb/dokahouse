@@ -3,6 +3,7 @@ import Home from './views/Home'
 import Hero from './views/Hero'
 import Features from './views/Features'
 import ChatbotWidget from './components/ChatbotWidget'
+import ThemeToggle from './components/ThemeToggle'
 import Testimonials from './components/Testimonial'
 
 import './styles/theme.css'
@@ -39,6 +40,7 @@ function App() {
       <Features />
       <ChatbotWidget />
       <Testimonials />
+      <ThemeToggle />
     </>
   )
 }
