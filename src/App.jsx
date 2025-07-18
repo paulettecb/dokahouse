@@ -13,6 +13,11 @@ function App() {
 
   useEffect(() => {
     document.body.className = darkMode ? 'dark' : ''
+    const root = document.getElementById('root')
+    if (root) {
+      root.classList.remove('light', 'dark')
+      root.classList.add(darkMode ? 'dark' : 'light')
+    }
   }, [darkMode])
 
   return (
