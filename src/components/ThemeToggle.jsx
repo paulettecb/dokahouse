@@ -13,6 +13,8 @@ const ThemeToggle = () => {
       root.classList.remove('light', 'dark')
       root.classList.add(theme)
     }
+    document.body.classList.remove('light', 'dark')
+    document.body.classList.add(theme)
   }, [theme])
 
   return (
