@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { easyBrokerGet } from '../services/easyBrokerApi'
+import PropertyCard from './PropertyCard'
 
 const PropertyList = () => {
   const [properties, setProperties] = useState([])
@@ -23,11 +24,23 @@ const PropertyList = () => {
   if (error) return <p>{error}</p>
 
   return (
-    <ul>
+    <div
+      style={{
+        display: 'flex',
+        flexWrap: 'wrap',
+        gap: '1rem',
+      }}
+    >
       {properties.map((prop) => (
-        <li key={prop.public_id}>{prop.title}</li>
+        <PropertyCard
+          key={prop.public_id}
+          title={prop.title}
+          price={prop.operations?.[0]?.amount}
+          image={prop.property_images?.[0]?.url_medium}
+          location={prop.location?.name}
+        />
       ))}
-    </ul>
+    </div>
   )
 }
 
