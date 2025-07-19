@@ -30,7 +30,7 @@ Crea un archivo `.env` con el siguiente contenido:
 
 ```
 VITE_OPENAI_API_KEY=tu_clave_de_openai
-VITE_EASYBROKER_TOKEN=tu_token_de_easybroker
+EASYBROKER_TOKEN=tu_token_de_easybroker
 ```
 
 ⚠️ Nunca subas .env al repositorio (está ignorado en .gitignore)
@@ -40,7 +40,8 @@ VITE_EASYBROKER_TOKEN=tu_token_de_easybroker
 
 ```
 npm install      # Instala dependencias
-npm run dev      # Inicia entorno local (localhost:5173)
+npm run dev      # Inicia frontend en localhost:5173
+cd backend && npm run dev  # Inicia backend en localhost:3000
 npm run build    # Genera versión optimizada
 ```
 
