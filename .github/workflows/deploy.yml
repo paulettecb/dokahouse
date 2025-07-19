@@ -26,8 +26,11 @@ jobs:
           node-version: 18
           cache: npm
 
-      - name: Install dependencies
+      - name: Install frontend dependencies
         run: npm ci
+
+      - name: Install backend dependencies
+        run: npm ci --prefix backend
 
       - name: Build project
         run: npm run build
